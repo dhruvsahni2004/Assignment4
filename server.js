@@ -1,3 +1,16 @@
+/*********************************************************************************
+
+WEB322 – Assignment 02
+I declare that this assignment is my own work in accordance with Seneca  Academic Policy.  No part *  of this assignment has been copied manually or electronically from any other source (including 3rd party web sites) or distributed to other students.
+
+Name: Rajkaran Singh
+Student ID: 145675229
+Date: 31 january,2024
+Cyclic Web App URL: https://dull-teal-meerkat-garb.cyclic.app/
+GitHub Repository URL: https://github.com/rajkaranxgill/web322-app
+
+********************************************************************************/ 
+
 const express = require('express');
 const path = require('path');
 const storeService = require('./store-service');
