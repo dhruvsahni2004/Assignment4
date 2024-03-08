@@ -32,7 +32,7 @@ body {
 
 /* Sidebar styles */
 aside {
-    background-color: #3498db; /* Blue background color for the sidebar */
+    background-color: #000000; /* Blue background color for the sidebar */
     color: #ecf0f1; /* Light grey text color */
     padding: 15px;
     border-radius: 5px;
