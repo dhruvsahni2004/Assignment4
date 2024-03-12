@@ -50,22 +50,6 @@ module.exports.getAllItems = function () {
     });
   };
 
- // Function to add an item
- /* module.exports.addItem = function(itemData) {
-    return new Promise((resolve, reject) => {
-        // Set published property to false if undefined, otherwise set it to true
-        itemData.published = itemData.published === undefined ? false : true;
-
-        // Set id property to the length of the "items" array plus one
-        itemData.id = items.length + 1;
-
-        // Push the updated itemData object onto the "items" array
-        items.push(itemData);
-
-        // Resolve the promise with the updated itemData value
-        resolve(itemData);
-    });
-  }; */
 
   // Function to add an item
 module.exports.addItem = function(itemData) {
