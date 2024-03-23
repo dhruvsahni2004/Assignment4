@@ -6,9 +6,9 @@
 * 
 *  Name: Dhruv Sahni Student ID: 143525228 Date: 11 March,2024
 
-*  Cyclic Web App URL: https://dull-teal-meerkat-garb.cyclic.app/
+*  Cyclic Web App URL: https://fair-pear-bass-tam.cyclic.app/shop/3
 * 
-*  GitHub Repository URL: https://github.com/dhruvsahni2004/Web-assignment
+*  GitHub Repository URL: https://github.com/dhruvsahni2004/Assignment4.git
 *
 ********************************************************************************/ 
 const express = require("express")
