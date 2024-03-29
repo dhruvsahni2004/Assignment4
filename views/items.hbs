@@ -1,6 +1,7 @@
 <div class="row">
     <div class="col-md-12">
         <h2>Items</h2>
+        <a href="/Items/add" class="btn btn-success pull-right">Add Post</a> <!-- Button to add a new post -->
         <hr />
         <div class="table-responsive">
             <table class="table">
@@ -12,6 +13,7 @@
                         <th>Price</th>
                         <th>Category</th>
                         <th>Published</th>
+                        <th></th> <!-- New column header for remove links -->
                     </tr>
                 </thead>
                 <tbody>
@@ -23,6 +25,9 @@
                         <td>{{price}}</td>
                         <td><a href="/items?category={{category}}">{{category}}</a></td>
                         <td>{{published}}</td>
+                        <td>
+                            <a href="/items/delete/{{id}}" class="btn btn-danger">Remove</a> <!-- Remove link styled as a button -->
+                        </td>
                     </tr>
                     {{/each}}
                 </tbody>
@@ -30,7 +35,7 @@
         </div>
         <div class="col-md-12 text-center">
             {{#unless items}}
-                <strong>{{message}}</strong>
+                <strong>{{message}}</strong> <!-- Message displayed if there are no items -->
             {{/unless}}
         </div>
     </div>
