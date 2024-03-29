@@ -16,7 +16,6 @@ const exphbs = require("express-handlebars");
 const Handlebars = require("handlebars"); // Import Handlebars module
 const path = require("path");
 const storeService = require("./store-service");
-
 const multer = require("multer");
 const cloudinary = require("cloudinary").v2;
 const streamifier = require("streamifier");
@@ -199,7 +198,6 @@ app.use(function (req, res) {
   res.render("404");
 });
 
-
 //setup http server to listen on HTTP_PORT
 app.listen(HTTP_PORT, onHttpStart);
 
@@ -207,7 +205,8 @@ function onHttpStart() {
   console.log("Express http server listening on: " + HTTP_PORT);
 
   // Initialize the storeService
-  storeService.initialize()
+  return storeService
+    .initialize()
     .then(function (data) {
       console.log(data);
     })
@@ -230,4 +229,3 @@ app.get("/items/delete/:id", async (req, res) => {
     res.status(500).send("Unable to Remove Post / Post not found");
   }
 });
-
